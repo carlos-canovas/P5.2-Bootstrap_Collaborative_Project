@@ -1,6 +1,19 @@
 # P5.2-Bootstrap_Collaborative_Project
 ## Adrián García & Carlos Cánovas
 
+#TO DO!
+### Carlos
+* about
+* contact
+* lawyers
+
+### Adri
+* news
+* post
+* practices
+
+* singlepost
+
 
 ## Welcome to GitHub Pages
 
