@@ -12,7 +12,7 @@
 * post
 * practices
 
-* singlepost
+
 
 
 ## Welcome to GitHub Pages
