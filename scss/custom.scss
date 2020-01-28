@@ -1,0 +1,370 @@
+$body-bg: #ced4da;
+$body-color: #57614e;
+$border-radius: 0;
+$border-width: 16px;
+$font-size-base: 1rem;
+$font-family-sans-serif: Garamond;
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond&display=swap");
+.row {
+  margin: 0 !important;
+}
+body {
+  padding-right: 10%;
+  padding-left: 1%;
+  header {
+    display: flex;
+    align-items: center;
+    background-color: hsl(88, 11%, 34%);
+    height: 45px;
+    justify-content: center;
+    margin-bottom: 20px;
+    .container {
+      @include make-row();
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+
+      .menu {
+        @include make-row();
+        .grey {
+          color: grey;
+        }
+        a {
+          padding: 13px;
+          text-decoration: underline;
+          color: #b8c6ac;
+          font-weight: bold;
+          font-size: 20px;
+          text-transform: uppercase;
+          font-family: "EB Garamond", serif;
+          text-shadow: 1px 1px #000;
+          @include make-col-auto();
+          &:hover {
+            color: white;
+          }
+        }
+        .page {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .introduction {
+    background: url(../images/bg-adbox.png) no-repeat center bottom;
+	border-bottom: 1px solid #fff;
+    .portada {
+      @include make-row();
+      background-color: #e9e9e9;
+      border: 1px solid #fff;
+      height: 500px;
+	  align-items: center;
+	  margin:0;
+      .ptext {
+        @include make-col(4);
+        h2 {
+          margin-left: 20px;
+          font-weight: bold;
+          text-align: center;
+		  padding: 0 5px;
+		  font-size: 3.2rem;
+        }
+        h3 {
+          text-align: center;
+          font-size: 24px;
+        }
+      }
+      .pimg {
+        @include make-col(6);
+        content: url(../images/family-large.jpg);
+		max-width: 170%;
+		width: auto;
+		margin-left: 20px;
+      }
+    }
+  }
+  .highlight {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background: #eee url(../images/bg-highlight.jpg);
+    width: 100%;
+    margin-left: 0 !important;
+    height: 190px;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+	justify-content: center;
+	margin:0;
+    .clearfix {
+      justify-content: center;
+      align-items: center;
+	  margin: 0 !important;
+	  padding: 10px;
+	  @include make-row();
+      .info1 {
+		@include make-col(8);
+        h2 {
+          font: 29px/30px "Times New Roman", Times, serif;
+          margin-bottom: 20px;
+        }
+        a {
+          color: $body-color;
+        }
+        
+      }
+      .info2 {
+        border-left: 1px dotted;
+        padding-left: 20px;
+        //height: 100%;
+        @include make-col(4);
+        :nth-child(3) {
+          text-align: right;
+          margin-top: 40px;
+        }
+        h3 {
+          margin-top: 18px;
+          font: 19px/24px "Times New Roman", Times, serif;
+        }
+      }
+    }
+  }
+  .features {
+    @include make-row();
+    justify-items: center;
+    padding: 10px;
+    border-bottom: 1px solid white;
+    background-color: #e2e2e2;
+    margin: 0 auto;
+    h2 {
+      color: #728063;
+      font: 19px/24px "Times New Roman", Times, serif;
+      margin-bottom: 25px;
+      letter-spacing: 2px;
+    }
+    .content {
+      @include make-row();
+      color: #626262;
+      margin: 0;
+      div {
+        @include make-col(3);
+        img {
+          border: 3px solid rgba(231, 231, 231, 0.8);
+        }
+      }
+      .box {
+        -webkit-box-shadow: 0 0 1px 3px rgba(207, 207, 207, 0.6);
+        box-shadow: 0 0 1px 3px rgba(207, 207, 207, 0.6);
+		-moz-box-shadow: 0 0 1px 3px rgba(207, 207, 207, 0.6);
+		
+      }
+      button {
+        background-position: -107px 0;
+        background: url(../images/interface.png) no-repeat;
+        text-shadow: 1px 1px rgba(0, 0, 0, 0.3);
+        height: 28px;
+        width: 97px;
+        text-align: center;
+        border: 0;
+        color: white;
+        font: 12px/28px Arial, Helvetica, sans-serif;
+      }
+      b {
+        color: #626262;
+        font: 14px/24px Arial, Helvetica, sans-serif;
+        font-weight: bold; //No te sentit pero es posa en normal de no ser-hi.
+      }
+      p {
+        color: #626262;
+        font: 14px/24px Arial, Helvetica, sans-serif;
+        padding-right: 30px;
+      }
+    }
+  }
+  .copyrigth {
+    @include make-row();
+    //align-items: center;
+    margin: 0;
+    //background: url(../lawfirm/images/bg-footnote.jpg) repeat-x left top;
+    border-top: 1px solid #fff;
+    padding: 6px 0 3px;
+    background-color: #4f5843;
+    div:nth-child(1) {
+      @include make-col(12);
+    }
+    @include make-col(12);
+    p {
+      color: white;
+      line-height: 30px;
+    }
+  }
+}
+@include media-breakpoint-down(lg) {
+	.pimg{
+		margin:0 !important;
+		
+	}
+}
+@include media-breakpoint-down(md) {
+  body {
+    padding-right: 5%;
+    header {
+      height: 50px;
+
+      .container {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+
+        .menu {
+          display: flex;
+          box-sizing: unset;
+          align-items: center;
+          margin: auto;
+          @include make-col(12);
+          a {
+            @include make-col(2);
+            font-size: 0.8rem;
+            padding: 0;
+          }
+        }
+      }
+	}
+	.introduction{
+		height: 430px;
+		.portada{
+			@include make-row();
+			margin: 0;
+			.ptext{
+				@include make-col(5);
+			}
+			div{
+				@include make-col(4);
+			}
+		}
+	}
+    .highlight {
+      height: 250px;
+    }
+    .features {
+	  padding: 10px;
+	  
+      .content {
+        @include make-row();
+        div {
+          @include make-col(4);
+        }
+        button {
+          display: none;
+        }
+        .b1 {
+          display: block;
+          margin: auto;
+        }
+      }
+    }
+    .copyrigth {
+      height: 60px;
+      text-align: center;
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  body {
+    padding: 0 0 0 20px;
+    header {
+      height: 50px;
+
+      .container {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        .menu {
+          margin: auto;
+          @include make-row();
+          a {
+            @include make-col(4);
+            font-size: 0.8rem;
+            padding: 0;
+          }
+        }
+      }
+    }
+    .introduction {
+      .portada {
+		@include make-row();
+		justify-content: center;
+        margin: 0;
+        .ptext {
+          @include make-col(12);
+          h2 {
+            font-size: 2.2em;
+            color: black;
+          }
+          h3 {
+            font-size: 1.1em;
+          }
+		}
+		div{
+			@include make-row();
+			justify-content: center;
+			margin-bottom: 100px;
+        img {
+		  @include make-col(12);
+          margin: 0 !important;
+		}
+	}
+      }
+    }
+    .highlight {
+      height: 360px;
+      .clearfix {
+        .info1 {
+          @include make-col(12);
+          p {
+            margin: 0;
+          }
+        }
+        .info2 {
+          @include make-col(12);
+          margin: 0;
+          padding: 0;
+          border: none;
+        }
+      }
+    }
+    .features {
+      .containerf {
+        .content {
+          @include make-row();
+          div {
+            background-color: white;
+            @include make-col(12);
+            img {
+              width: 100%;
+            }
+            p {
+              padding: 12px;
+            }
+            b {
+              font-size: 1.3em;
+              padding: 12px;
+              font-weight: 300;
+            }
+            button {
+              display: none;
+            }
+            .b1 {
+              display: block;
+              margin: auto;
+            }
+          }
+        }
+      }
+    }
+    .copyrigth {
+      margin: 0;
+      height: 80px;
+      font-size: 0.92rem;
+    }
+  }
+}
