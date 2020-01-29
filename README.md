@@ -1,3 +1,22 @@
+# P5.2-Bootstrap_Collaborative_Project
+## Adrián García & Carlos Cánovas
+
+#TO DO!
+### Carlos
+* about
+* contact
+* lawyers
+
+### Adri
+* news
+* post
+* practices
+
+### Restant
+* singlepost
+
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/carlos-canovas/P5.2-Bootstrap_Collaborative_Project/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
