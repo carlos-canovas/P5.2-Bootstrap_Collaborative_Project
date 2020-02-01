@@ -18,8 +18,6 @@
 * lawyers
 
 
-* singlepost
-
 # Paleta de corlos a utilitzar: 
 **(la podem canviar en qualsevol moment pero recoman quan jo ho tinguen fet)**
 
