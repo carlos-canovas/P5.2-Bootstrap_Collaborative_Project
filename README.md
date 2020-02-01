@@ -7,13 +7,17 @@
 #TO DO!
 ### Carlos
 * about
-* contact
-* lawyers
+* practices
+
 
 ### Adri
 * ~~news~~
-* post
-* practices
+* ~~post~~
+* Home page
+* contact
+* lawyers
+
+
 * singlepost
 
 # Paleta de corlos a utilitzar: 
