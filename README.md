@@ -11,11 +11,9 @@
 * lawyers
 
 ### Adri
-* news
+* ~~news~~
 * post
 * practices
-
-### Restant
 * singlepost
 
 # Paleta de corlos a utilitzar: 
