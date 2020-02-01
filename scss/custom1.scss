@@ -3,9 +3,8 @@
 $body-color: #ee3430;
 $body-bg: #ced4da;
 body {
-  
   //contact page
-    
+    background-color: $p5;
     .modal-header {
       border-bottom: 2px solid $p2 !important;
     }
@@ -57,3 +56,17 @@ body {
 	  }
   }
 }
+@include media-breakpoint-down(md) {
+	.contact-container{
+		.contact-info{
+			@include make-col(12);
+			margin: auto;
+		}
+		.modal{
+			width: 100% !important;
+			flex-basis: 100% !important;
+			max-width: 100% !important;
+		}
+		
+	}
+  }
