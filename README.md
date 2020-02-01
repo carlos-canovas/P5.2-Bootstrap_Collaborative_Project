@@ -15,7 +15,26 @@
 ### Restant
 * singlepost
 
+# Paleta de corlos a utilitzar: 
+**(la podem canviar en qualsevol moment pero recoman quan jo ho tinguen fet)**
 
+$p1-hex: #463E42;
+
+$p2-hex: #A09E8E;
+
+$p3-hex: #939192;
+
+$p4-hex: #555F60;
+
+$p5-hex: #C9DDDF;
+
+```scss
+//Exemple de com emplear:
+body{
+background-color: $p1;
+}
+
+```
 
 ## Welcome to GitHub Pages
 
