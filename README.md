@@ -5,6 +5,12 @@
 
 
 #TO DO!
+
+Important, el **[menú](http://81.203.8.151/P05.2_menu.php "Aquest menú")** ha de tenir news desactivat, intentarem tenir es mateix menú que en l'index, i quan tinguem tot fet les modificarem tots a sa vegada.
+
+Agregar aquest 2 linies a nes teu scss:
+`@import "custom";
+@import "variables";`
 ### Carlos
 * about
 * practices
