@@ -21,15 +21,15 @@
 # Paleta de corlos a utilitzar: 
 **(la podem canviar en qualsevol moment pero recoman quan jo ho tinguen fet)**
 
-$p1-hex: #463E42;
+$p1: #463E42;
 
-$p2-hex: #A09E8E;
+$p2: #A09E8E;
 
-$p3-hex: #939192;
+$p3: #939192;
 
-$p4-hex: #555F60;
+$p4: #555F60;
 
-$p5-hex: #C9DDDF;
+$p5: #C9DDDF;
 
 ```scss
 //Exemple de com emplear:
