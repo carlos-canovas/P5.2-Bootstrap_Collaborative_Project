@@ -9880,6 +9880,11 @@ h3 {
   margin: 0 !important;
 }
 
+.disabled {
+  color: #646464 !important;
+  pointer-events: none;
+}
+
 body {
   padding-right: 10%;
   padding-left: 1%;
@@ -10279,5 +10284,6 @@ body .copyrigth p {
     font-size: 0.92rem;
   }
 }
+/* Color Theme Swatches in Hex */
 
 /*# sourceMappingURL=custom1.css.map */
