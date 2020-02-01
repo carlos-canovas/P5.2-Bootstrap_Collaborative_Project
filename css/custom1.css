@@ -10285,5 +10285,53 @@ body .copyrigth p {
   }
 }
 /* Color Theme Swatches in Hex */
+body .container .modal {
+  display: unset;
+  position: relative;
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%;
+}
+body .container .modal-header {
+  border-bottom: 2px solid #A09E8E !important;
+}
+body .container .modal-footer {
+  border-top: 1px solid #A09E8E;
+}
+body .container .modal-content {
+  border: 1px solid;
+}
+body .container .modal-content button {
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+body .container .modal-content h5 {
+  font-size: 2rem;
+}
+body .container .modal-content label {
+  padding: 0;
+}
+body .container .modal-content input {
+  border: 1px solid;
+  padding: 0;
+  height: 28px;
+}
+body .container .modal-content textarea {
+  border: 1px solid;
+}
+body .contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  width: 85%;
+  margin: auto;
+}
+body .contact-info {
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+body .contact-info hr {
+  border: 0.5px dotted;
+}
 
 /*# sourceMappingURL=custom1.css.map */
