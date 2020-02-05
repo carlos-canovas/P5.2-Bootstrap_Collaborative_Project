@@ -74,4 +74,26 @@ body {
       }
     }
   }
+.body-about {
+    background-color: $p5;
+}
+
+@include media-breakpoint-down(md) {
+    .body-about {
+        font-size: 1em;
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 2em;
+            text-decoration: none;
+        }
+        .sin-espacio,
+        .carousel {
+            display: none;
+        }
+        .copyrigth {
+            font-size: 1em;
+        }
+    }
 }
