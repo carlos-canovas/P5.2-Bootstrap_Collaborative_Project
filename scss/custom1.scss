@@ -1,6 +1,25 @@
 @import "custom";
 @import "variables";
-
 body {
     background-color: $p5;
+}
+
+@include media-breakpoint-down(md) {
+    body {
+        font-size: 3em;
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 3em;
+        }
+        .sin-espacio,
+        .carousel,
+        .menu {
+            display: none;
+        }
+        .copyrigth {
+            font-size: 0.6em;
+        }
+    }
 }
