@@ -5,21 +5,21 @@ body {
 }
 
 @include media-breakpoint-down(md) {
-    body {
-        font-size: 3em;
+    .body-about {
+        font-size: 1em;
         h1 {
             font-size: 2em;
         }
         h2 {
-            font-size: 3em;
+            font-size: 2em;
+            text-decoration: none;
         }
         .sin-espacio,
-        .carousel,
-        .menu {
+        .carousel {
             display: none;
         }
         .copyrigth {
-            font-size: 0.6em;
+            font-size: 1em;
         }
     }
 }

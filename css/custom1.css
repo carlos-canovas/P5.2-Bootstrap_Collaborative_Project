@@ -10285,22 +10285,22 @@ body {
 }
 
 @media (max-width: 991.98px) {
-  body {
-    font-size: 3em;
+  .body-about {
+    font-size: 1em;
   }
-  body h1 {
+  .body-about h1 {
     font-size: 2em;
   }
-  body h2 {
-    font-size: 3em;
+  .body-about h2 {
+    font-size: 2em;
+    text-decoration: none;
   }
-  body .sin-espacio,
-body .carousel,
-body .menu {
+  .body-about .sin-espacio,
+.body-about .carousel {
     display: none;
   }
-  body .copyrigth {
-    font-size: 0.6em;
+  .body-about .copyrigth {
+    font-size: 1em;
   }
 }
 
