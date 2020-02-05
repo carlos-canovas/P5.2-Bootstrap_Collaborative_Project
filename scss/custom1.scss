@@ -1,1 +1,6 @@
-$body-bg: #ced4da;
+@import "custom";
+@import "variables";
+
+body {
+    background-color: $p5;
+}
