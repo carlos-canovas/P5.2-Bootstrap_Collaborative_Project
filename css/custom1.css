@@ -9930,6 +9930,13 @@ body header .container .menu a:hover {
 body header .container .menu .page {
   color: white;
 }
+body header .container .menu .disabled {
+  cursor: default;
+  color: #353535;
+}
+body header .container .menu .disabled:hover {
+  color: #353535;
+}
 body header .container .menu-movil {
   display: none;
 }
