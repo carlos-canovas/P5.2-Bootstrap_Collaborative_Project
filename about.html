@@ -7,21 +7,20 @@
     <title>About - Law Firm Web Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/custom1.css" type="text/css">
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script>
+		$(document).ready(() => {
+			//Load the HTML contents of the header into <header>
+			$('header').load('resources/headerHTML.html');
+		});
+	</script>
+	<script src="scripts/scripts.js"></script>
+	<script src="https://kit.fontawesome.com/9f6accc375.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="body-about">
     <header>
-        <div class="container">
-            <div class="menu">
-                <a href="index.html">Home</a>
-                <a href="about.html" class="page">About</a>
-                <a href="">Practices</a>
-                <a href="" class="grey ">Our lawyers</a>
-                <a href="" class="grey disabled">News</a>
-                <a href="" class="grey ">Contact</a>
-            </div>
-        </div>
+
     </header>
     <div id="contents">
         <div class="clearfix">
