@@ -17,8 +17,6 @@ Agregar aquest 2 linies a nes teu scss:
 
 
 ### Adri
-* ~~news~~
-* ~~post~~
 * Home page
 * contact
 * lawyers
