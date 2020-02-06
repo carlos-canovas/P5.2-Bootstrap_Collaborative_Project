@@ -5,7 +5,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
 		crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -16,6 +15,12 @@
 		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/custom1.css">
 	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script>
+		$(document).ready(() => {
+			//Load the HTML contents of the header into <header>
+			$('header').load('resources/headerHTML.html');
+		});
+	</script>
 	<script src="scripts/scripts.js"></script>
 	<script src="https://kit.fontawesome.com/9f6accc375.js" crossorigin="anonymous"></script>
 	<title>Contact</title>
@@ -23,29 +28,6 @@
 
 <body>
 	<header>
-		<div class="container">
-			<div class="menu">
-				<a href="index.html" class="">Home</a>
-				<a href="">About</a>
-				<a href="">Practices</a>
-				<a href="our_lawyers.html" class="grey ">Our lawyers</a>
-				<a href="" class="disabled">News</a>
-				<a href="" class="grey page">Contact</a>
-			</div>
-			<div class="menu-button">
-				<i class="far fa-caret-square-down fa-2x text-white"></i>
-			</div>
-			<div class="contmenu">
-			<div class="menu-movil">
-				<a href="index.html" class="p-2">Home</a>
-				<a href="" class="p-2">About</a>
-				<a href="" class="p-2">Practices</a>
-				<a href="our_lawyers.html" class="grey p-2">Our lawyers</a>
-				<a href="" class="disabled p2">News</a>
-				<a href="" class="grey page p-2">Contact</a>
-			</div>
-		</div>
-	</div>
 	</header>
 	<div class="container contact-container">
 		<div class="contact-info">

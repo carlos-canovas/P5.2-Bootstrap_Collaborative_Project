@@ -1,11 +1,11 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond&display=swap");
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css?family=EB+Garamond&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9933,6 +9933,21 @@ body header .container .menu .page {
 body header .container .menu-movil {
   display: none;
 }
+body header .container .menu-button {
+  display: none;
+}
+body header .container .btn-search {
+  position: absolute;
+  left: 20px;
+  display: none;
+}
+body header .container .btn-search .form-control {
+  padding: 0;
+  border: 0;
+  height: 28px;
+  border-radius: 4px;
+  align-self: center;
+}
 body .introduction {
   background: url(../images/bg-adbox.png) no-repeat center bottom;
   border-bottom: 1px solid #fff;
@@ -10186,6 +10201,7 @@ body .copyrigth p {
     align-items: center;
     display: flex;
     padding: 0;
+    z-index: 1;
   }
   body header .container .menu {
     display: none;
@@ -10208,10 +10224,13 @@ body .copyrigth p {
     flex-direction: column;
     background-color: #939192;
     width: 100%;
-    margin-top: 250px;
+    margin-top: 280px;
   }
   body header .container .menu-movil a {
     border-top: 2px solid black;
+  }
+  body header .container .btn-search {
+    display: block;
   }
   body .introduction .portada {
     display: flex;
