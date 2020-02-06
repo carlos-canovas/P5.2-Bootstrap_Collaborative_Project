@@ -48,7 +48,14 @@ body {
         }
         .page {
           color: white;
-        }
+		}
+		.disabled{
+			cursor: default;
+			color: rgb(53, 53, 53);
+			&:hover{
+				color: rgb(53, 53, 53);
+			}
+		}
       }
       .menu-movil {
         display: none;
