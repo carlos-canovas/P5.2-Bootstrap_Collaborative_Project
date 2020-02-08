@@ -9901,6 +9901,7 @@ body header .container {
   text-align: center;
   align-items: center;
   justify-content: center;
+  max-width: none;
 }
 body header .container .menu {
   display: flex;
@@ -10216,13 +10217,17 @@ body .copyrigth p {
   body header .container .menu-button {
     width: 40px;
     height: 40px;
-    display: block;
+    display: flex;
     position: absolute;
+    justify-content: center;
+    align-items: center;
     right: 0;
+    transition-duration: 0.2s;
   }
   body header .container .contmenu {
     display: none;
     width: 100%;
+    font-size: 1.4em;
   }
   body header .container .menu-movil {
     display: flex;
@@ -10231,7 +10236,7 @@ body .copyrigth p {
     flex-direction: column;
     background-color: #939192;
     width: 100%;
-    margin-top: 280px;
+    margin-top: 337px;
   }
   body header .container .menu-movil a {
     border-top: 2px solid black;
