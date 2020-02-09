@@ -21,12 +21,14 @@ body {
     background-color: hsl(88, 11%, 34%);
     height: 45px;
     justify-content: center;
-    margin-bottom: 20px;
+	margin-bottom: 20px;
     .container {
       @include make-row();
       text-align: center;
       align-items: center;
-      justify-content: center;
+	  justify-content: center;
+	  max-width: none;
+	 
       .menu {
         @include make-row();
         .grey {
@@ -309,13 +311,18 @@ body {
         .menu-button {
           width: 40px;
           height: 40px;
-          display: block;
-          position: absolute;
-          right: 0;
+          display: flex;
+		  position: absolute;
+		  justify-content: center;
+		  align-items: center;
+		  right: 0;
+		  transition-duration: 0.2s;
+		  
         }
         .contmenu {
           display: none;
-          width: 100%;
+		  width: 100%;
+		  font-size: 1.4em;
         }
         .menu-movil {
           display: flex;
@@ -324,7 +331,7 @@ body {
           flex-direction: column;
           background-color: $p3;
           width: 100%;
-          margin-top: 280px;
+          margin-top: 337px;
           a {
             border-top: 2px solid black;
           }
