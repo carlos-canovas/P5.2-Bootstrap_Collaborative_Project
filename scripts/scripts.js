@@ -1,8 +1,4 @@
 var menu = false;
-window.onload = function(){
-	$(".menu-button").on('click',showMenu);
-}
-
 function showMenu(){
 	if(!menu)
 		$(".menu-button").css('transform',"rotate(180deg)");
@@ -13,3 +9,4 @@ function showMenu(){
 	menu = !menu;
 
 }
+

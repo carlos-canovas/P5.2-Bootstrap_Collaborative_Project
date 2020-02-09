@@ -9901,6 +9901,7 @@ body header .container {
   text-align: center;
   align-items: center;
   justify-content: center;
+  max-width: none;
 }
 body header .container .menu {
   display: flex;
@@ -10216,13 +10217,17 @@ body .copyrigth p {
   body header .container .menu-button {
     width: 40px;
     height: 40px;
-    display: block;
+    display: flex;
     position: absolute;
+    justify-content: center;
+    align-items: center;
     right: 0;
+    transition-duration: 0.2s;
   }
   body header .container .contmenu {
     display: none;
     width: 100%;
+    font-size: 1.4em;
   }
   body header .container .menu-movil {
     display: flex;
@@ -10231,8 +10236,9 @@ body .copyrigth p {
     flex-direction: column;
     background-color: #939192;
     width: 100%;
-    margin-top: 280px;
-    list-style: none;
+   // margin-top: 280px;//carlos
+   // list-style: none;//carlos
+    margin-top: 337px;
   }
   body header .container .menu-movil a {
     border-top: 2px solid black;
@@ -10376,9 +10382,27 @@ body .contact-info {
 body .contact-info hr {
   border: 0.5px dotted;
 }
-body .our .modal {
-  display: unset;
-  position: relative;
+body .our {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
+}
+body .our h1 {
+  text-align: center;
+}
+body .our .card {
+  flex: 0 0 66.6666666667%;
+  max-width: 66.6666666667%;
+}
+body .our button {
+  width: 60px;
+  padding: 0;
+  border: 1px solid #A09E8E;
 }
 
 .body-practices {
