@@ -9895,7 +9895,7 @@ body header {
   background-color: #57604d;
   height: 45px;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 0.75rem !important;
 }
 body header .container {
   display: flex;
