@@ -9895,6 +9895,10 @@ body h4,
 body h5 {
   font-family: "Montserrat", sans-serif;
 }
+body .nav-pills .nav-item a {
+  background-color: #0CF;
+  color: #FFF;
+}
 body header {
   display: flex;
   align-items: center;
@@ -10454,11 +10458,24 @@ body .our button {
 .body-practices .off {
   display: none;
 }
-.body-practices .dropdown-item {
-  color: #333;
+.body-practices .card-body {
+  display: flex;
+  justify-content: space-between;
 }
-.body-practices .dropdown-item:hover {
-  color: #0CF;
+.body-practices .btn-primary {
+  background-color: #0CF !important;
+  border: none;
+}
+.body-practices .dropdown-menu {
+  background-color: #333;
+  border: none;
+}
+.body-practices .dropdown-menu a {
+  color: #FFF !important;
+}
+.body-practices .dropdown-menu a:hover {
+  color: #0CF !important;
+  cursor: pointer;
 }
 .body-practices header .container .menu li {
   padding: 13px !important;
