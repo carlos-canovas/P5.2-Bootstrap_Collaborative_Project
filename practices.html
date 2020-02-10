@@ -13,10 +13,15 @@
     <script>
         $(document).ready(() => {
             //Load the HTML contents of the header into <header>
-            $('header').load('resources/headerHTML.html');
+			$('header').load('resources/headerHTML.html');
+			$('footer').load('resources/footerHTML.html');
+			setTimeout(function () {
+			$("#practices").addClass("page");
+		}, 300);
             $('#prenuptial-btn').on('click', prenuptial);
             $('#marriage-btn').on('click', marriage);
-            $('#divorce-btn').on('click', divorce);
+			$('#divorce-btn').on('click', divorce);
+			$("#page_name").html($(document).attr('title'));
         });
         setTimeout(function() {
             $("#practices").addClass("page");
@@ -45,14 +50,18 @@
     </script>
     <script src="https://kit.fontawesome.com/9f6accc375.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/custom1.css">
-    <title>P5.2</title>
+    <title>Practices</title>
 </head>
 
 <body class="body-practices">
     <header>
 
     </header>
-
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+		  <li class="breadcrumb-item active" ><a id="page_name" href="#"></a></li>
+		</ol>
+	  </nav>
     <div class="contenido">
         <div class="btn-group-vertical">
             <button type="button" class="btn btn-primary disabled">PRENUPTIAL AGREEMENT</button><br>
@@ -119,13 +128,8 @@
             </p>
         </div>
     </div>
-    <br>
-    <div class="copyrigth">
-
-        <div class="col-xs-12 col-sm-12">
-            <p>© COPYRIGHT 2023 MANES WINCHESTER. ALL RIGHTS RESERVED.</p>
-        </div>
-    </div>
+	<br>
+	<footer></footer>
 </body>
 
 </html>

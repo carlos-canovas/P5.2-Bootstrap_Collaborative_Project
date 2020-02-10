@@ -53,8 +53,25 @@ body {
         .modal {
             display: unset;
             position: relative;
-        }
-    }
+		}
+			@include make-row();
+			justify-content: center;
+			justify-items: center;
+			flex-direction: column;
+			align-items: center;
+			h1{
+				text-align: center;
+			}
+		  .card {
+			  @include make-col(8);
+			  //align-self: center;
+		  }
+		  button{
+			  width: 60px;
+			  padding: 0;
+			  border: 1px solid $p2;
+		  }
+		}
 }
 
 .body-practices {
@@ -187,25 +204,6 @@ body{
 	  }
 	}
 	//our lawyers
-	.our {
-		@include make-row();
-		justify-content: center;
-		justify-items: center;
-		flex-direction: column;
-		align-items: center;
-		h1{
-			text-align: center;
-		}
-	  .card {
-		  @include make-col(8);
-		  //align-self: center;
-	  }
-	  button{
-		  width: 60px;
-		  padding: 0;
-		  border: 1px solid $p2;
-	  }
-	}
   }
   @include media-breakpoint-down(md) {
 	body {
@@ -271,4 +269,5 @@ body{
 		  }
 	  }
   }
+}
 }

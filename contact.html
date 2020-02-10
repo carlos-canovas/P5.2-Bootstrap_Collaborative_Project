@@ -20,6 +20,8 @@
 		$(document).ready(() => {
 			//Load the HTML contents of the header into <header>
 			$('header').load('resources/headerHTML.html');
+			$('footer').load('resources/footerHTML.html');
+			$("#page_name").html($(document).attr('title'));
 			
 		});
 		setTimeout(function () {
@@ -34,6 +36,11 @@
 <body>
 	<header>
 	</header>
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+		  <li class="breadcrumb-item active" ><a id="page_name" href="#"></a></li>
+		</ol>
+	  </nav>
 	<div class="container contact-container">
 		<div class="contact-info">
 			<h2>Contact info</h2>
@@ -82,10 +89,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="copyrigth">
-
-		<div class="col-xs-12 col-sm-12"><p>© COPYRIGHT 2023 MANES WINCHESTER. ALL RIGHTS RESERVED.</p></div>
-	</div>
+	<footer></footer>
 </body>
 
 </html>
