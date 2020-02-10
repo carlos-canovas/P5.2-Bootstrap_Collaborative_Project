@@ -3,6 +3,161 @@
 $body-color: #ee3430;
 $body-bg: #ced4da;
 body {
+    //contact page
+    background-color: $p5;
+    .modal-header {
+        border-bottom: 2px solid $p2 !important;
+    }
+    .modal-footer {
+        border-top: 1px solid $p2;
+    }
+    .modal-content {
+        border: 1px solid;
+        button {
+            border: 2px solid transparent;
+            border-radius: 5px;
+        }
+        h5 {
+            font-size: 2rem;
+        }
+        label {
+            padding: 0;
+        }
+        input {
+            border: 1px solid;
+            padding: 0;
+            height: 28px;
+        }
+        textarea {
+            border: 1px solid;
+        }
+    }
+    .contact-container {
+        @include make-row();
+        width: 85%;
+        margin: auto;
+        .modal {
+            @include make-col(8);
+            display: unset;
+            position: relative;
+        }
+    }
+    .contact-info {
+        @include make-col(4);
+        hr {
+            border: 0.5px dotted;
+        }
+    }
+    //our lawyers
+    .our {
+        .modal {
+            display: unset;
+            position: relative;
+		}
+			@include make-row();
+			justify-content: center;
+			justify-items: center;
+			flex-direction: column;
+			align-items: center;
+			h1{
+				text-align: center;
+			}
+		  .card {
+			  @include make-col(8);
+			  //align-self: center;
+		  }
+		  button{
+			  width: 60px;
+			  padding: 0;
+			  border: 1px solid $p2;
+		  }
+		}
+}
+
+.body-practices {
+    display: flex;
+    flex-direction: column;
+    .off {
+        display: none;
+    }
+    .contenido {
+        display: flex;
+        flex-direction: row;
+        .btn-group-vertical {
+            margin-right: 5%;
+        }
+        .cartas {
+            .card {
+                border: 0;
+                float: left;
+                img {
+                    border: 1px solid $p2;
+                    box-shadow: 5px 5px 10px grey;
+                }
+                .card-img-top {
+                    height: 198px;
+                    width: 265px;
+                }
+                .card-body {
+                    height: 166px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: baseline;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    body {
+        background-color: $p5;
+        .contact-container {
+            width: 100%;
+            .contact-info {
+                @include make-col(12);
+                margin: auto;
+                h2 {
+                    text-align: center;
+                }
+            }
+            .modal {
+                width: 100%;
+                flex-basis: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .body-about {
+        font-size: 1em;
+        h1 {
+            font-size: 2em;
+        }
+        h2 {
+            font-size: 2em;
+            text-decoration: none;
+        }
+        .sin-espacio,
+        .carousel {
+            display: none;
+        }
+        .copyrigth {
+            font-size: 1em;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .body-practices {
+        font-size: 1em;
+        .btn-group-vertical {
+            display: none;
+        }
+    }
+body{
 	//contact page
 	background-color: $p5;
 	.modal-header {
@@ -49,25 +204,6 @@ body {
 	  }
 	}
 	//our lawyers
-	.our {
-		@include make-row();
-		justify-content: center;
-		justify-items: center;
-		flex-direction: column;
-		align-items: center;
-		h1{
-			text-align: center;
-		}
-	  .card {
-		  @include make-col(8);
-		  //align-self: center;
-	  }
-	  button{
-		  width: 60px;
-		  padding: 0;
-		  border: 1px solid $p2;
-	  }
-	}
   }
   @include media-breakpoint-down(md) {
 	body {
@@ -133,4 +269,5 @@ body {
 		  }
 	  }
   }
+}
 }

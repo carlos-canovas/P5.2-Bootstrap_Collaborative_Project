@@ -20,6 +20,8 @@
 		$(document).ready(() => {
 			//Load the HTML contents of the header into <header>
 			$('header').load('resources/headerHTML.html');
+			$('footer').load('resources/footerHTML.html');
+			$("#page_name").html($(document).attr('title'));
 
 		});
 		setTimeout(function () {
@@ -28,12 +30,17 @@
 	</script>
 	<script src="https://kit.fontawesome.com/9f6accc375.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="css/custom1.css">
-	<title>Contact</title>
+	<title>Our Lawyers</title>
 </head>
 
 <body>
 	<header>
 	</header>
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+		  <li class="breadcrumb-item active" ><a id="page_name" href="#"></a></li>
+		</ol>
+	  </nav>
 	<div class="modal" tabindex="-1" role="dialog" id="exampleModal">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
@@ -142,9 +149,5 @@
 			</div>
 		</div>
 	</div>
-	<div class="copyrigth">
-        <div class="col-xs-12 col-sm-12">
-            <p>© COPYRIGHT 2023 MANES WINCHESTER. ALL RIGHTS RESERVED.</p>
-        </div>
-    </div>
+	<footer></footer>
 </body>

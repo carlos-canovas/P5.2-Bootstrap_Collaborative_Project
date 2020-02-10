@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <script>
+        $(document).ready(() => {
+            //Load the HTML contents of the header into <header>
+			$('header').load('resources/headerHTML.html');
+			$('footer').load('resources/footerHTML.html');
+			setTimeout(function () {
+			$("#practices").addClass("page");
+		}, 300);
+            $('#prenuptial-btn').on('click', prenuptial);
+            $('#marriage-btn').on('click', marriage);
+			$('#divorce-btn').on('click', divorce);
+			$("#page_name").html($(document).attr('title'));
+        });
+        setTimeout(function() {
+            $("#practices").addClass("page");
+        }, 100);
+
+        function prenuptial() {
+            $('.cartas').addClass('off');
+            $('#prenuptial').removeClass('off');
+            $('#marriage').addClass('off');
+            $('#divorce').addClass('off');
+        }
+
+        function marriage() {
+            $('.cartas').addClass('off');
+            $('#prenuptial').addClass('off');
+            $('#marriage').removeClass('off');
+            $('#divorce').addClass('off');
+        }
+
+        function divorce() {
+            $('.cartas').addClass('off');
+            $('#prenuptial').addClass('off');
+            $('#marriage').addClass('off');
+            $('#divorce').removeClass('off');
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/9f6accc375.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/custom1.css">
+    <title>Practices</title>
+</head>
+
+<body class="body-practices">
+    <header>
+
+    </header>
+	<nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+		  <li class="breadcrumb-item active" ><a id="page_name" href="#"></a></li>
+		</ol>
+	  </nav>
+    <div class="contenido">
+        <div class="btn-group-vertical">
+            <button type="button" class="btn btn-primary disabled">PRENUPTIAL AGREEMENT</button><br>
+            <button type="button" class="btn btn-primary disabled">MARRIAGE</button><br>
+            <button type="button" class="btn btn-primary disabled">DIVORCE</button>
+        </div>
+
+        <div class="cartas">
+            <div class="card" style="width:265px">
+                <img class="card-img-top" src="images/laughing.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">PRENUPTIAL AGREEMENT</h4>
+                    <a href="#" class="btn btn-primary stretched-link" id="prenuptial-btn">More Info</a>
+                </div>
+            </div>
+
+            <div class="card" style="width:265px">
+                <img class="card-img-top" src="images/bride.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">MARRIAGE</h4>
+                    <a href="#" class="btn btn-primary stretched-link" id="marriage-btn">More Info</a>
+                </div>
+            </div>
+
+            <div class="card" style="width:265px">
+                <img class="card-img-top" src="images/divorce.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title">DIVORCE</h4>
+                    <a href="#" class="btn btn-primary stretched-link" id="divorce-btn">More Info</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="prenuptial" class="off">
+            <h1>PRENUPTAIL AGREEMENT</h1>
+            <img src="images/laughing.jpg"><br><br>
+            <p>This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template
+                without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the Forums.
+            </p>
+            <p>
+                You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the Forums.
+            </p>
+        </div>
+
+        <div id="marriage" class="off">
+            <h1>MARRIAGE</h1>
+            <img src="images/bride.jpg"><br><br>
+            <p>This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template
+                without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the Forums.
+            </p>
+            <p>
+                You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the Forums.
+            </p>
+        </div>
+
+        <div id="divorce" class="off">
+            <h1>DIVORCE</h1>
+            <img src="images/divorce.jpg"><br><br>
+            <p>This website template has been designed by Free Website Templates for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template
+                without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the Forums.
+            </p>
+            <p>
+                You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the Forums.
+            </p>
+        </div>
+    </div>
+	<br>
+	<footer></footer>
+</body>
+
+</html>

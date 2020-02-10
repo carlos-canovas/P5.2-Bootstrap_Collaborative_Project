@@ -2,17 +2,19 @@ $body-bg: #ced4da;
 $body-color: #57614e;
 $border-radius: 0;
 $border-width: 16px;
-$font-size-base: 1rem;
+$font-size-base: 0.90rem;
 @import url("https://fonts.googleapis.com/css?family=EB+Garamond&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 $font-family-sans-serif: Garamond;
 @import "../node_modules/bootstrap/scss/bootstrap";
-
 @import "variables";
 .row {
   margin: 0 !important;
 }
-
 body {
+	a,p,h1,h2,h3,h4,h5{
+		font-family: 'Montserrat', sans-serif;
+	}
   padding-right: 10%;
   padding-left: 1%;
   header {
@@ -21,14 +23,13 @@ body {
     background-color: hsl(88, 11%, 34%);
     height: 45px;
     justify-content: center;
-	margin-bottom: 20px;
+    margin-bottom: 20px;
     .container {
       @include make-row();
       text-align: center;
       align-items: center;
 	  justify-content: center;
 	  max-width: none;
-	 
       .menu {
         @include make-row();
         .grey {
@@ -50,35 +51,37 @@ body {
         }
         .page {
           color: white;
-		}
-		.disabled{
-			cursor: default;
-			color: rgb(53, 53, 53);
-			&:hover{
-				color: rgb(53, 53, 53);
-			}
-		}
+        }
+        .disabled {
+          cursor: default;
+          color: rgb(53, 53, 53);
+          &:hover {
+            color: rgb(53, 53, 53);
+          }
+        }
       }
       .menu-movil {
         display: none;
-	  }
-	  .menu-button{
-		  display: none;
-	  }
+      }
+      .menu-button {
+        display: none;
+      }
       .btn-search {
         position: absolute;
-		left: 20px;
-		display: none;
+        left: 20px;
+        display: none;
         .form-control {
           padding: 0;
-		  border: 0;
-		  height: 28px;
-		  border-radius: 4px;
-		  align-self: center;
-
+          border: 0;
+          height: 28px;
+          border-radius: 4px;
+          align-self: center;
         }
       }
     }
+  }
+  .breadcrumb {
+    border-radius: 7px;
   }
   .introduction {
     background: url(../images/bg-adbox.png) no-repeat center bottom;
@@ -193,16 +196,16 @@ body {
         text-align: center;
         border: 0;
         color: white;
-        font: 12px/28px Arial, Helvetica, sans-serif;
+        //font: 12px/28px Arial, Helvetica, sans-serif;
       }
       b {
         color: #626262;
-        font: 14px/24px Arial, Helvetica, sans-serif;
+        //font: 14px/24px Arial, Helvetica, sans-serif;
         font-weight: bold; //No te sentit pero es posa en normal de no ser-hi.
       }
       p {
         color: #626262;
-        font: 14px/24px Arial, Helvetica, sans-serif;
+        //font: 14px/24px Arial, Helvetica, sans-serif;
         padding-right: 30px;
       }
     }
@@ -215,20 +218,38 @@ body {
     padding: 6px 0 3px;
     background-color: #4f5843;
     text-align: center;
-    div:nth-child(1) {
-      @include make-col(12);
-    }
-    @include make-col(12);
     p {
       color: white;
       line-height: 30px;
     }
+  }
+  .copyindex{
+	  .fa-facebook-square{
+		@include make-col(6);
+		  color: rgb(48, 48, 223);
+	  }
+	  .fa-twitter-square{
+		  color:rgb(27, 190, 255);
+	  }
+	  .fa-google-plus-square{
+		  color:rgb(255, 94, 0)
+	  }
+	  .fa-pinterest{
+		  color:red
+	  }
   }
 }
 
 @include media-breakpoint-down(lg) {
   .pimg {
     margin: 0 !important;
+  }
+  .menu-button {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: block;
+    overflow: hidden;
   }
 }
 
@@ -278,9 +299,6 @@ body {
         div {
           @include make-col(4);
         }
-        button {
-          display: none;
-        }
         .b1 {
           display: block;
           margin: auto;
@@ -309,15 +327,14 @@ body {
           display: none;
         }
         .menu-button {
-          width: 40px;
-          height: 40px;
-          display: flex;
-		  position: absolute;
-		  justify-content: center;
-		  align-items: center;
-		  right: 0;
-		  transition-duration: 0.2s;
-		  
+			width: 40px;
+			height: 40px;
+			display: flex;
+			position: absolute;
+			justify-content: center;
+			align-items: center;
+			right: 0;
+			transition-duration: 0.2s;
         }
         .contmenu {
           display: none;
@@ -331,14 +348,15 @@ body {
           flex-direction: column;
           background-color: $p3;
           width: 100%;
-          margin-top: 337px;
+		  list-style: none;
+		  margin-top: 322px;
           a {
             border-top: 2px solid black;
           }
-		}
-		.btn-search{
-			display: block;
-		}
+        }
+        .btn-search {
+          display: block;
+        }
       }
     }
     .introduction {
@@ -368,7 +386,7 @@ body {
       }
     }
     .highlight {
-      height: 360px;
+      height: 435px;
       .clearfix {
         .info1 {
           @include make-col(12);
@@ -401,9 +419,6 @@ body {
               font-size: 1.3em;
               padding: 12px;
               font-weight: 300;
-            }
-            button {
-              display: none;
             }
             .b1 {
               display: block;
