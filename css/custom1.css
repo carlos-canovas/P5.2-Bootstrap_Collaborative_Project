@@ -10357,10 +10357,10 @@ body {
   background-color: #FFF;
 }
 body .modal-header {
-  border-bottom: 2px solid #0CF !important;
+  border-bottom: 2px solid #333 !important;
 }
 body .modal-footer {
-  border-top: 1px solid #0CF;
+  border-top: 1px solid #333;
 }
 body .modal-content {
   border: 1px solid;
