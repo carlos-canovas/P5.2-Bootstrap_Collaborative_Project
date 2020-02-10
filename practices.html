@@ -13,7 +13,11 @@
     <script>
         $(document).ready(() => {
             //Load the HTML contents of the header into <header>
-            $('header').load('resources/headerHTML.html');
+			$('header').load('resources/headerHTML.html');
+			$('footer').load('resources/footerHTML.html');
+			setTimeout(function () {
+			$("#practices").addClass("page");
+		}, 300);
             $('#prenuptial-btn').on('click', prenuptial);
             $('#marriage-btn').on('click', marriage);
 			$('#divorce-btn').on('click', divorce);
@@ -124,13 +128,8 @@
             </p>
         </div>
     </div>
-    <br>
-    <div class="copyrigth">
-
-        <div class="col-xs-12 col-sm-12">
-            <p>© COPYRIGHT 2023 MANES WINCHESTER. ALL RIGHTS RESERVED.</p>
-        </div>
-    </div>
+	<br>
+	<footer></footer>
 </body>
 
 </html>

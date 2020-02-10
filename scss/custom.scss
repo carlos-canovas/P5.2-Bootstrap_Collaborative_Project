@@ -348,9 +348,8 @@ body {
           flex-direction: column;
           background-color: $p3;
           width: 100%;
-          margin-top: 280px;
 		  list-style: none;
-		  //margin-top: 337px;
+		  margin-top: 322px;
           a {
             border-top: 2px solid black;
           }
@@ -387,7 +386,7 @@ body {
       }
     }
     .highlight {
-      height: 360px;
+      height: 435px;
       .clearfix {
         .info1 {
           @include make-col(12);

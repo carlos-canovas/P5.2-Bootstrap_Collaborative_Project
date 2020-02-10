@@ -10253,8 +10253,8 @@ body .copyindex .fa-pinterest {
     flex-direction: column;
     background-color: #939192;
     width: 100%;
-    margin-top: 280px;
     list-style: none;
+    margin-top: 322px;
   }
   body header .container .menu-movil a {
     border-top: 2px solid black;
@@ -10295,7 +10295,7 @@ body .copyindex .fa-pinterest {
     margin: 0 !important;
   }
   body .highlight {
-    height: 360px;
+    height: 435px;
   }
   body .highlight .clearfix .info1 {
     flex: 0 0 100%;

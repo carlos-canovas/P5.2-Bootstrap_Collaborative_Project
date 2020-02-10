@@ -12,11 +12,12 @@
 		$(document).ready(() => {
 			//Load the HTML contents of the header into <header>
 			$('header').load('resources/headerHTML.html');
+			$('footer').load('resources/footerHTML.html');
 			$("#page_name").html($(document).attr('title'));
 		});
 		setTimeout(function () {
 			$("#about").addClass("page");
-		}, 100);
+		}, 300);
 	</script>
 	<script src="scripts/scripts.js"></script>
 	<script src="https://kit.fontawesome.com/9f6accc375.js" crossorigin="anonymous"></script>
@@ -161,17 +162,8 @@
 			</table>
 		</div>
 	</div>
-	<div class="copyrigth">
-
-		<div class="col-xs-12 col-sm-12">
-			<p>© COPYRIGHT 2023 MANES WINCHESTER. ALL RIGHTS RESERVED.</p>
-		</div>
-	</div>
-
+	<footer></footer>
 	<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script>
-
-	</script>
 </body>
 
 </html>
