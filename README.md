@@ -21,15 +21,15 @@ We used the color #F1D4AF as the principal color and #E08E79, #774F38, #C5E0DC a
 * Color palette
 
 ### About
-Use [BS Carousel](https://getbootstrap.com/docs/4.3/components/carousel/ "BS Carousel") to create a beautiful slider.
-Use [BS Accordion component](https://getbootstrap.com/docs/4.3/components/collapse/ "BS Accordion component") to create a card section with information.
-Use [BS Table](https://getbootstrap.com/docs/4.3/content/tables/ "BS Table") to create table.
+* Use [BS Carousel](https://getbootstrap.com/docs/4.3/components/carousel/ "BS Carousel") to create a beautiful slider.
+* Use [BS Accordion component](https://getbootstrap.com/docs/4.3/components/collapse/ "BS Accordion component") to create a card section with information.
+* Use [BS Table](https://getbootstrap.com/docs/4.3/content/tables/ "BS Table") to create table.
 
 ### Practices
-Use [BS Button Group](https://getbootstrap.com/docs/4.3/components/button-group/ "BS Button Group") to crearte a submenu that is disabled.
-Use [BS Card Groups](https://getbootstrap.com/docs/4.3/components/card/ "BS Card Groups") to crearte a section with 3 different type of information.
-Use [BS Dropdown](https://getbootstrap.com/docs/4.3/components/navs/#tabs-with-dropdowns "BS Dropdown") to crearte the dropdow section in the menu.
-Used basic JS to create 3 functions to change the content of the page.
+* Use [BS Button Group](https://getbootstrap.com/docs/4.3/components/button-group/ "BS Button Group") to crearte a submenu that is disabled.
+* Use [BS Card Groups](https://getbootstrap.com/docs/4.3/components/card/ "BS Card Groups") to crearte a section with 3 different type of information.
+* Use [BS Dropdown](https://getbootstrap.com/docs/4.3/components/navs/#tabs-with-dropdowns "BS Dropdown") to crearte the dropdow section in the menu.
+* Used basic JS to create 3 functions to change the content of the page.
 
 ## Adri
 * **Worked on [Index](#index), [Contact](#contact) and [lawyers](#lawyers)**
