@@ -98,10 +98,23 @@ body {
     .off {
         display: none;
     }
-    .dropdown-item {
-        color: $p3;
-        &:hover {
-            color: $p2;
+    .card-body {
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn-primary {
+        background-color: $p2 !important;
+        border: none;
+    }
+    .dropdown-menu {
+        background-color: $p3;
+        border: none;
+        a {
+            color: $p1 !important;
+            &:hover {
+                color: $p2 !important;
+                cursor: pointer;
+            }
         }
     }
     header {
