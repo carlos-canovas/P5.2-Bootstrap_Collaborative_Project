@@ -58,6 +58,22 @@ We used ....
 
 ## Adri
 
-Worked on [Index](#index)
+* **Worked on [Index](#index), [Contact](#contact) and [lawyers](#lawyers)**
+* Menu navigation and footer stuff
 
-# index
+### Index
+
+### Contact
+Use [BS Form](https://getbootstrap.com/docs/4.3/components/forms/ "BS Form") to create the page.
+
+### Lawyers
+
+* Left section  inside [BS Modal](https://getbootstrap.com/docs/4.3/components/modal/ "BS Modal") and it shows when clicked button "more"
+* Rigth part of the page will be in [BS Horizontal Cards](https://getbootstrap.com/docs/4.3/components/card/#horizontal "Cards")
+
+# depences
+
+# Authors
+## Misco Team
+* Adrián García (Founder)
+* Carlos Cánovas (Pleb)
