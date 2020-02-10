@@ -46,6 +46,7 @@ Use [BS Form](https://getbootstrap.com/docs/4.3/components/forms/ "BS Form") to 
 
 # Depences
 We used JQuery, SCSS and Bootstrap to create this page worth a minimum of 10.
+This project has been made with Github tool.
 
 # Authors
 ## Misco Team
