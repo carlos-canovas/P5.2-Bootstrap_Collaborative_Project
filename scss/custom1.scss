@@ -98,6 +98,12 @@ body {
     .off {
         display: none;
     }
+    .dropdown-item {
+        color: $p3;
+        &:hover {
+            color: $p2;
+        }
+    }
     header {
         .container {
             .menu {

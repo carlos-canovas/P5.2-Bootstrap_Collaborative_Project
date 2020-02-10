@@ -10454,6 +10454,12 @@ body .our button {
 .body-practices .off {
   display: none;
 }
+.body-practices .dropdown-item {
+  color: #333;
+}
+.body-practices .dropdown-item:hover {
+  color: #0CF;
+}
 .body-practices header .container .menu li {
   padding: 13px !important;
   line-height: 10px;
