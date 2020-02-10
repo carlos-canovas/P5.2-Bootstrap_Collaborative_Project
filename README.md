@@ -34,3 +34,46 @@ $p3: #939192;
 $p4: #555F60;
 
 $p5: #C9DDDF;
+
+# Documentation
+
+## Lawfirm Website using scss with theming boostrap
+### Description
+
+#### To do in this practice:
+
+**General**
+* All pages need to have desktop and responsive mobile version.
+* Use BS Breadcrumbs.
+* All css will be done in scss, and boostrap clases if needed on HTML page.
+* Override BS classes with our scss.
+* Use a color palette and new font family.
+* Use JQ for reuse common parts of the page.
+* Use components from Boostrap.
+
+### Color palette
+We used ....
+
+## carlos
+
+## Adri
+
+* **Worked on [Index](#index), [Contact](#contact) and [lawyers](#lawyers)**
+* Menu navigation and footer stuff
+
+### Index
+
+### Contact
+Use [BS Form](https://getbootstrap.com/docs/4.3/components/forms/ "BS Form") to create the page.
+
+### Lawyers
+
+* Left section  inside [BS Modal](https://getbootstrap.com/docs/4.3/components/modal/ "BS Modal") and it shows when clicked button "more"
+* Rigth part of the page will be in [BS Horizontal Cards](https://getbootstrap.com/docs/4.3/components/card/#horizontal "Cards")
+
+# depences
+
+# Authors
+## Misco Team
+* Adrián García (Founder)
+* Carlos Cánovas (Pleb)
