@@ -14,7 +14,9 @@
 * Use components from Boostrap.
 
 ### Color palette
-We used the color #F1D4AF as the principal color and #E08E79, #774F38, #C5E0DC and #A28355 as the complementary colors.
+We used the color #FFF as the principal color and #0CF,  #333, #E9E9E9 and #E2E2E2 as the complementary colors.
+
+This color palette is created by our business Misco.
 
 ## Carlos
 * **Worked on [About](#about) and [Practices](#practices)**
