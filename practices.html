@@ -12,16 +12,15 @@
     <script src="scripts/scripts.js"></script>
     <script>
         $(document).ready(() => {
-            //Load the HTML contents of the header into <header>
-			$('header').load('resources/headerHTML.html');
-			$('footer').load('resources/footerHTML.html');
-			setTimeout(function () {
-			$("#practices").addClass("page");
-		}, 300);
+            //Load the HTML contents of the header into <footer>
+            $('footer').load('resources/footerHTML.html');
+            setTimeout(function() {
+                $("#practices").addClass("page");
+            }, 300);
             $('#prenuptial-btn').on('click', prenuptial);
             $('#marriage-btn').on('click', marriage);
-			$('#divorce-btn').on('click', divorce);
-			$("#page_name").html($(document).attr('title'));
+            $('#divorce-btn').on('click', divorce);
+            $("#page_name").html($(document).attr('title'));
         });
         setTimeout(function() {
             $("#practices").addClass("page");
@@ -55,17 +54,61 @@
 
 <body class="body-practices">
     <header>
-
+        <div class="container navbar-light">
+            <div class="menu">
+                <a href="index.html" id="home">Home</a>
+                <a href="about.html" id="about">About</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle p-0" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Practices
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" onclick="prenuptial()">Prenuptial Agreement</a>
+                        <a class="dropdown-item" onclick="marriage()">Marriage</a>
+                        <a class="dropdown-item" onclick="divorce()">Divorce</a>
+                    </div>
+                </li>
+                <a href="our_lawyers.html" id="ourlawyers">Our lawyers</a>
+                <a class="grey disabled">News</a>
+                <a href="contact.html" id="contact">Contact</a>
+            </div>
+            <div class="menu-button">
+                <i class="fas fa-bars text-white"></i>
+            </div>
+            <div class="btn-search">
+                <div class="col-md-3">
+                    <form class="navbar-form" role="search">
+                        <div class="input-group add-on">
+                            <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+                            <div class="input-group-btn">
+                                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="contmenu">
+                <div class="menu-movil">
+                    <a href="index.html" class="p-2">Home</a>
+                    <a href="about.html" class="p-2">About</a>
+                    <a href="practices.html" class="p-2">Practices</a>
+                    <a href="our_lawyers.html" class="grey p-2">Our lawyers</a>
+                    <a class="disabled p2">News</a>
+                    <a href="contact.html" class="grey page p-2">Contact</a>
+                </div>
+            </div>
+        </div>
     </header>
-	<nav aria-label="breadcrumb">
-		<ol class="breadcrumb">
-		  <li class="breadcrumb-item active" ><a id="page_name" href="#"></a></li>
-		</ol>
-	  </nav>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active">
+                <a id="page_name" href="#"></a>
+            </li>
+        </ol>
+    </nav>
     <div class="contenido">
-        <div class="btn-group-vertical">
-            <button type="button" class="btn btn-primary disabled">PRENUPTIAL AGREEMENT</button><br>
-            <button type="button" class="btn btn-primary disabled">MARRIAGE</button><br>
+        <div class="btn-group-vertical mr-5 flex-column">
+            <button type="button" class="btn btn-primary disabled">PRENUPTIAL AGREEMENT</button>
+            <button type="button" class="btn btn-primary disabled">MARRIAGE</button>
             <button type="button" class="btn btn-primary disabled">DIVORCE</button>
         </div>
 
@@ -128,8 +171,11 @@
             </p>
         </div>
     </div>
-	<br>
-	<footer></footer>
+    <br>
+    <footer></footer>
+    <script>
+        $(".menu-button").on('click', showMenu);
+    </script>
 </body>
 
 </html>

@@ -10251,7 +10251,7 @@ body .copyindex .fa-pinterest {
     background-color: blue;
     flex-wrap: wrap;
     flex-direction: column;
-    background-color: #939192;
+    background-color: #774F38;
     width: 100%;
     list-style: none;
     margin-top: 322px;
@@ -10345,13 +10345,13 @@ body .copyindex .fa-pinterest {
 }
 /* Color Theme Swatches in Hex */
 body {
-  background-color: #C9DDDF;
+  background-color: #F1D4AF;
 }
 body .modal-header {
-  border-bottom: 2px solid #A09E8E !important;
+  border-bottom: 2px solid #E08E79 !important;
 }
 body .modal-footer {
-  border-top: 1px solid #A09E8E;
+  border-top: 1px solid #E08E79;
 }
 body .modal-content {
   border: 1px solid;
@@ -10419,7 +10419,23 @@ body .our .card {
 body .our button {
   width: 60px;
   padding: 0;
-  border: 1px solid #A09E8E;
+  border: 1px solid #E08E79;
+}
+
+.body-about .card {
+  border: 0 !important;
+  margin-bottom: 1rem !important;
+}
+.body-about .card > * {
+  border: 0 !important;
+}
+.body-about table {
+  font-size: 22px;
+}
+.body-about th {
+  border: 0 !important;
+  margin: 0;
+  padding: 0;
 }
 
 .body-practices {
@@ -10429,19 +10445,23 @@ body .our button {
 .body-practices .off {
   display: none;
 }
+.body-practices header .container .menu li {
+  padding: 13px !important;
+  line-height: 10px;
+}
 .body-practices .contenido {
   display: flex;
   flex-direction: row;
 }
-.body-practices .contenido .btn-group-vertical {
-  margin-right: 5%;
+.body-practices .contenido .btn-group-vertical button {
+  margin-bottom: 1.7rem !important;
 }
 .body-practices .contenido .cartas .card {
-  border: 0;
+  border: 0 !important;
   float: left;
 }
 .body-practices .contenido .cartas .card img {
-  border: 1px solid #A09E8E;
+  border: 1px solid #E08E79;
   box-shadow: 5px 5px 10px grey;
 }
 .body-practices .contenido .cartas .card .card-img-top {
@@ -10457,7 +10477,7 @@ body .our button {
 
 @media (max-width: 991.98px) {
   body {
-    background-color: #C9DDDF;
+    background-color: #A28355;
   }
   body .contact-container {
     width: 100%;
@@ -10504,13 +10524,13 @@ body .our button {
   }
 
   body {
-    background-color: #C9DDDF;
+    background-color: #A28355;
   }
   body .modal-header {
-    border-bottom: 2px solid #A09E8E !important;
+    border-bottom: 2px solid #E08E79 !important;
   }
   body .modal-footer {
-    border-top: 1px solid #A09E8E;
+    border-top: 1px solid #E08E79;
   }
   body .modal-content {
     border: 1px solid;
@@ -10574,7 +10594,7 @@ body .our button {
   }
 
   .body-about {
-    background-color: #C9DDDF;
+    background-color: #A28355;
   }
 }
 @media (max-width: 991.98px) and (max-width: 991.98px) and (max-width: 991.98px) {
@@ -10598,7 +10618,7 @@ body .our button {
 }
 @media (max-width: 991.98px) and (max-width: 991.98px) {
   body {
-    background-color: #C9DDDF;
+    background-color: #A28355;
   }
 }
 @media (max-width: 991.98px) and (max-width: 991.98px) and (max-width: 991.98px) {
