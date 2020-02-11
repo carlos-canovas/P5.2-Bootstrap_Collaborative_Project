@@ -38,6 +38,8 @@ This color palette is created by our business Misco.
 * Menu navigation and footer stuff
 
 ### Index
+* Section over footer in 3 blocks using BS toggleable tabs.
+* Media social icons on footer.
 
 ### Contact
 Use [BS Form](https://getbootstrap.com/docs/4.3/components/forms/ "BS Form") to create the page.
